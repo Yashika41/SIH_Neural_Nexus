@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: Cambria, Georgia, serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+}
+
+/* Custom Leaflet Map Tooltips & Badges */
+.custom-leaflet-marker-pickup,
+.custom-leaflet-marker-dest {
+  background: transparent;
+  border: none;
+}
+
+.custom-leaflet-route-badge {
+  background: transparent;
+  border: none;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
