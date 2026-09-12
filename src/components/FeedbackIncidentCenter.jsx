@@ -157,7 +157,7 @@ export default function FeedbackIncidentCenter() {
                 : 'border-transparent text-slate-500 hover:text-slate-900'
             }`}
           >
-            Field Observation Feedback Cards
+            Field Observation Feedback
           </button>
           <button
             onClick={() => setActiveTabMode('bulk')}
@@ -167,7 +167,7 @@ export default function FeedbackIncidentCenter() {
                 : 'border-transparent text-slate-500 hover:text-slate-900'
             }`}
           >
-            Bulk Export & Hazard Incidents
+            Hazard Incidents
           </button>
         </div>
 
@@ -233,19 +233,8 @@ export default function FeedbackIncidentCenter() {
               </div>
             </div>
           ) : (
-            /* BULK EXPORT & HAZARD INCIDENTS (TAB 2) */
+            /* HAZARD INCIDENTS (TAB 2) */
             <div className="space-y-4">
-              <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-between">
-                <div>
-                  <h4 className="font-extrabold text-xs text-slate-900">Need standard template export?</h4>
-                  <p className="text-[11px] text-slate-500">Download formatted CSV/Excel reports containing crowd-sourced feedback data.</p>
-                </div>
-                <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-xs py-2 px-4 rounded-lg shadow-sm flex items-center gap-1.5">
-                  <Download className="h-3.5 w-3.5" />
-                  <span>Download Report Template</span>
-                </button>
-              </div>
-
               <div className="space-y-3">
                 <h4 className="font-extrabold text-xs text-slate-900 uppercase">Active Regional Hazard Incidents</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
